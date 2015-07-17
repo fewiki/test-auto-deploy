@@ -1,0 +1,82 @@
+.header{
+	background: #1abc9c;
+	margin-top: 0;
+	position: fixed;
+	width: 100%;
+}
+.contents{
+	position: fixed;
+	top: 62px;
+	bottom: 62px;
+	width: 100%;
+}
+.content{
+	overflow-y: auto;
+	height: 100%;
+	padding-left: 8px;
+}
+
+.btn-toolbar{
+	position: fixed;
+	bottom: 0;
+	top: auto;
+	display: block;
+	width: 100%;
+	margin-left: 0
+}
+.btn-toolbar .btn-group{
+	margin-left: 0;
+	display: block;
+	float: none;
+}
+
+.btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle) {
+    border-bottom-left-radius: 0
+}
+.btn-group>.btn:last-child:not(:first-child):not(.dropdown-toggle) {
+    border-bottom-right-radius: 0
+}
+
+/*滚动条*/  
+* { 
+    scrollbar-face-color: #353535; 
+    scrollbar-shadow-color: #565656; 
+    scrollbar-highlight-color: #565656; 
+    scrollbar-3dlight-color: #7F7F7F; 
+    scrollbar-darkshadow-color: #565656; 
+    scrollbar-track-color: #565656; 
+    scrollbar-arrow-color: #DADADA; 
+}
+ /*滚动条整体*/  
+::-webkit-scrollbar{  
+    width:8px; /*滚动条宽度*/
+}  
+/*滚动条按钮*/  
+::-webkit-scrollbar-button {  
+  
+}  
+::-webkit-scrollbar-track{  
+    background-color:#F3F3F3;  /*滑道全部*/  
+}  
+::-webkit-scrollbar-track-piece{  
+    background-color:#DFF3FA;  /*滑道*/  
+    -webkit-border-radius:4px; /*滑道圆角宽度*/  
+}  
+::-webkit-scrollbar-thumb{  
+    background-color:#97C2E1; /*滑动条表面*/  
+    border:solid 1px #C0C0C0; /*滑动条边框*/  
+    border-radius:4px;  /*滑动条圆角宽度*/  
+}  
+/*横竖滚动条交角*/  
+::-webkit-scrollbar-corner {  
+    background-color: #F3F3F3;  
+}  
+/*横竖滚动条交角图案*/  
+::-webkit-resizer {  
+   background-repeat: no-repeat;  
+   background-position: bottom right;  
+}  
+/*鼠标滑过滑动条*/  
+::-webkit-scrollbar-thumb:hover{  
+    background-color:#F3F3E0;  
+}  
